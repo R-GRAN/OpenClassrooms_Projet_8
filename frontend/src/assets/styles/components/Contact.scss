@@ -1,11 +1,21 @@
+.contact-text {
+  margin: 0 20px;
+}
+
 .form-container {
   margin-block: 30px;
 }
 
 input,
 textarea {
+  width: 70vw;
+  max-width: 600px;
   margin: 12px 0;
   padding: 12px;
+}
+
+textarea {
+  height: 35vh;
 }
 
 .contact-info {
@@ -21,4 +31,24 @@ textarea {
 .contact-info i {
   margin-right: 10px;
   transform: scale(1.5);
+}
+
+@media screen and (min-width: 426px) and (max-width: 780px) {
+  input,
+  textarea {
+    margin: 10px 0;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contact-text {
+    margin: 0 10px;
+  }
+
+  input,
+  textarea {
+    margin: 8px 0;
+    padding: 8px;
+  }
 }

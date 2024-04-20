@@ -2,14 +2,14 @@ function Contact() {
   return (
     <section className="contact" id="contact">
       <h3>Contact</h3>
-      <h4>
+      <h4 className="contact-text">
         Une question ? N'hesitez pas à m'écrire ! Je vous repondrais en moins de
         24h. À très bientôt !
       </h4>
 
       <div className="form-container">
         <form className="form" id="contact-form">
-          <label htmlFor="nom">Nom :</label>
+          <label htmlFor="nom">Nom</label>
           <div className="inputBox">
             <input
               type="text"
@@ -20,7 +20,7 @@ function Contact() {
             />
           </div>
 
-          <label htmlFor="email">Email :</label>
+          <label htmlFor="email">Email</label>
           <div className="inputBox">
             <input
               type="email"
@@ -31,7 +31,7 @@ function Contact() {
             />
           </div>
 
-          <label htmlFor="message">Message :</label>
+          <label htmlFor="message">Message</label>
           <div className="inputBox">
             <textarea
               id="message"

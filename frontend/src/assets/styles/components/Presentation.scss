@@ -1,0 +1,38 @@
+.presentation-details {
+    display: flex;
+    padding-top: 10px;
+    margin: 0 40px;
+  }
+  
+  .presentation-img {
+    width: 300px;
+  }
+  
+  .presentation-text {
+    align-self: center;
+    margin: 20px;
+  }
+
+@media screen and (min-width: 426px) and (max-width: 780px) {
+    .presentation-details {
+        margin: 0 20px;
+        align-items: center;
+      }
+    
+      .presentation-img {
+        height: 175px;
+        width: 175px;
+      }
+}
+
+@media screen and (max-width: 425px) {
+    .presentation-details {
+        flex-direction: column;
+        margin: 0;
+      }
+    
+      .presentation-img {
+        width: 250px;
+        align-self: center;
+      }
+}

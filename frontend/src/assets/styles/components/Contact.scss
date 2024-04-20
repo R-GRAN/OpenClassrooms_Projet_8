@@ -1,0 +1,24 @@
+.form-container {
+  margin-block: 30px;
+}
+
+input,
+textarea {
+  margin: 12px 0;
+  padding: 12px;
+}
+
+.contact-info {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.contact-info a {
+  margin-top: 5px;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  transform: scale(1.5);
+}

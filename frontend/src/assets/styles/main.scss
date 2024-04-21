@@ -1,1 +1,10 @@
-@import "./components/HeaderApp.scss"
+@import "./base/base.scss";
+
+@import "./components/HeaderApp.scss";
+@import "./components/Banner.scss";
+@import "./components/Presentation.scss";
+@import "./components/Skills.scss";
+@import "./components/Portfolio.scss";
+@import "./components/Contact.scss";
+@import "./components/FooterApp.scss";
+@import "./components/Project.scss";

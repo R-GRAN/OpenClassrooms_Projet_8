@@ -1,3 +1,5 @@
+import emoji from "@/assets/images/emoji.webp";
+
 function Presentation() {
   return (
     <section id="presentation">
@@ -5,7 +7,7 @@ function Presentation() {
       <div className="presentation-details">
         <img
           className="presentation-img"
-          src="src/assets/images/emoji.webp"
+          src={emoji}
           alt="dessin représentant Rémy"
         />
         <p className="presentation-text">

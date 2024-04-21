@@ -1,49 +1,66 @@
 .banner {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    background-color: black;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: black;
+}
+
+.banner-background {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(90%);
+}
+
+.banner-introduction {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.fadeIn {
+  opacity: 0; // Opacité initiale à 0
+  animation: fadeInAnimation 1.5s forwards; // Utilisation de l'animation fadeInAnimation pendant 2 secondes
+}
+.delayed {
+  animation-delay: 1.25s; // Délai de 2 secondes avant le début de l'animation
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0; // Opacité initiale à 0
   }
-  
-  .banner-background {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    filter: brightness(90%);
+  to {
+    opacity: 1; // Opacité finale à 1
   }
-  
-  .banner-introduction {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-  }
-  
+}
+
+.banner-title {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
+.banner-subtitle {
+  font-size: 3.5rem;
+}
+
+@media screen and (min-width: 451px) and (max-width: 780px) {
   .banner-title {
-    font-size: 6rem;
-    margin-bottom: 1rem;
-  }
-  .banner-subtitle {
-    font-size: 3.5rem;
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
   }
 
-@media screen and (min-width: 426px) and (max-width: 780px){
-    .banner-title {
-        font-size: 4rem;
-        margin-bottom: 0.5rem;
-      }
-    
-      .banner-subtitle {
-        font-size: 1.75rem;
-      }
+  .banner-subtitle {
+    font-size: 1.75rem;
+  }
 }
-@media screen and (max-width: 425px) {
-    .banner-title {
-        font-size: 3rem;
-      }
-      .banner-subtitle {
-        font-size: 1.5rem;
-      }
+@media screen and (max-width: 450px) {
+  .banner-title {
+    font-size: 3rem;
+  }
+  .banner-subtitle {
+    font-size: 1.5rem;
+  }
 }

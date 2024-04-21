@@ -53,7 +53,7 @@
     opacity: 1;
   }
 
-@media screen and (min-width: 426px) and (max-width: 780px) {
+@media screen and (min-width: 451px) and (max-width: 780px) {
     .skills-article {
         height: 125px;
         width: 125px;
@@ -70,7 +70,7 @@
       }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
     .skills-lists {
         display: flex;
         flex-direction: column;

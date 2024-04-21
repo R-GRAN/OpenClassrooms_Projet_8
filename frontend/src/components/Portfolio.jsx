@@ -20,8 +20,6 @@ function Portfolio() {
     fetchProjects();
   }, []);
 
-  console.log(projects);
-
   return (
     <section className="portfolio" id="portfolio">
       <h3>Portfolio</h3>

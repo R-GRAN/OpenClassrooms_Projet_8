@@ -23,7 +23,7 @@ function HeaderApp() {
 
   return (
     <header className="header-style">
-      <span>Rémy Grangenois</span>
+      <a href="#home">Rémy Grangenois</a>
       <button
         className="header-btn-sm-menu"
         aria-label="menu"
@@ -34,16 +34,16 @@ function HeaderApp() {
       <nav className="header-nav">
         <ul ref={menuRef} className="header-menu">
           <li>
-            <a href="#presentation">Présentation</a>
+            <a href="#presentation" onClick={toggleMenu}>Présentation</a>
           </li>
           <li>
-            <a href="#skills">Compétences</a>
+            <a href="#skills" onClick={toggleMenu}>Compétences</a>
           </li>
           <li>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#portfolio" onClick={toggleMenu}>Portfolio</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={toggleMenu}>Contact</a>
           </li>
         </ul>
       </nav>

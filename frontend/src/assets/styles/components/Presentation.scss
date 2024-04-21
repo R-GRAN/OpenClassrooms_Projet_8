@@ -13,7 +13,7 @@
     margin: 20px;
   }
 
-@media screen and (min-width: 426px) and (max-width: 780px) {
+@media screen and (min-width: 451px) and (max-width: 780px) {
     .presentation-details {
         margin: 0 20px;
         align-items: center;
@@ -25,7 +25,7 @@
       }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
     .presentation-details {
         flex-direction: column;
         margin: 0;

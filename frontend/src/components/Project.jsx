@@ -1,11 +1,11 @@
-function Project({ project , index}) {
+function Project({ project, index }) {
   return (
-    <article className={index % 2 === 0 ? "project" : 'project light-reverse'}>
+    <article className={index % 2 === 0 ? "project" : "project light-reverse"}>
       <div className="project-img-container">
         <img
           className="project-img"
           src={project.imageUrl}
-          alt= "visuel du projet"
+          alt={"visuel du projet " + project.title}
         />
       </div>
 
